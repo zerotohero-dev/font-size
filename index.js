@@ -13,7 +13,7 @@ program
 /**
  * @module
  *
- * See <http://jov.arvojournals.org/article.aspx?articleid=2191906> to learn more about how I found these numbers.
+ * See <http://jov.arvojournals.org/article.aspx?articleid=2191906> to learn more about how I came up with these numbers.
  *
  *                          +-- Too small
  * 0.14deg ==== 0.002443461 +-- A bit small but still legit
