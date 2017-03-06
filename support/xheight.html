@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>x-height ratio calculation helper</title>
+<style>
+    * {margin: 0;padding: 0}
+    body {
+        font-size: 32px !important;
+        font-family: "PragmataPro Mono";
+    }
+    p.testContainerEm {
+        font-size: 1.5em;
+        height: 10em;
+        background: #aaccff;
+    }
+    p.testContainerEx {
+        font-size: 1.5em;
+        height: 10ex;
+        background: #ff99cc;
+    }
+
+</style>
+</head>
+<body>
+    <p class="testContainerEm" id="emContainer">Hello World (10em).</p>
+    <p class="testContainerEx" id="exContainer">Hello World (10ex).</p>
+    <script>
+        (function() {
+            'use strict';
+
+            var exc = document.getElementById('exContainer');
+            var emc = document.getElementById('emContainer');
+
+            function height( container ) {
+                return container.getBoundingClientRect().height;
+            }
+
+            alert( height(exc) / height(emc) );
+        }());
+    </script>
+</body>
+</html>
