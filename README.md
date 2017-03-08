@@ -169,7 +169,7 @@ If you want to report a bug; or share a comment or suggestion, [file an issue](h
 
 ## License
 
-MIT-licensed. — [See the license file](LICENSE.md) for details.
+MIT-licensed. — [See the license file for details](LICENSE.md).
 
 ## Code of Conduct
 
