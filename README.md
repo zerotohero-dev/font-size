@@ -165,7 +165,7 @@ If you want to report a bug; or share a comment or suggestion, [file an issue](h
 ## Contact Information
 
 * **Project Maintainer**: [Volkan Özçelik](https://volkan.io/)
-* **Project Website**: <https://bytesized.tv>
+* **Project Website**: [bytesized.tv](https://bytesized.tv/)
 
 ## License
 
