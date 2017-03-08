@@ -1,6 +1,6 @@
 {
   "name": "font-size",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "font-size is a command-line utility to calculate the best font-size based on a multitude of factors.",
   "main": "index.js",
   "preferGlobal": true,
@@ -8,7 +8,8 @@
     "font-size": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bin/test.sh",
+    "lint": "bin/lint.sh"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,8 @@
     "commander": "^2.9.0"
   },
   "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-jsbites": "^0.4.1",
     "http-server": "^0.9.0"
   }
 }
