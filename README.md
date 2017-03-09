@@ -77,12 +77,12 @@ The `font-size` API is simple; you provide your distance to the screen (*in inch
 ```bash
 font-size --distance 28 --x-height .53 --resolution 110
 
-    For your typeface, the minimum legible font size is 14px
+    For your typeface, the minimum legible font size is 19px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 16px;
+    Your text is nicely readable starting from… 22px;
 
-    however, anything beyond 19px will damage readability.
+    however, anything beyond 27px will damage readability.
 ```
 
 If you are a laptop user, on average, your eyes will be 23’’ from the monitor. Let’s change the distance to see what `font-size` recommends:
@@ -90,12 +90,12 @@ If you are a laptop user, on average, your eyes will be 23’’ from the monito
 ```bash
 font-size --distance 23 --x-height .53 --resolution 110
 
-    For your typeface, the minimum legible font size is 12px
+    For your typeface, the minimum legible font size is 16px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 13px;
+    Your text is nicely readable starting from… 18px;
 
-    however, anything beyond 16px will damage readability.
+    however, anything beyond 22px will damage readability.
 ```
 
 Fair enough. And you generally hold your tablet around 14’’ from your eyes. Let’s recalculate with adjusted distance, using an Apple iPad Mini at 163 dpi:
@@ -103,12 +103,12 @@ Fair enough. And you generally hold your tablet around 14’’ from your eyes. 
 ```bash
 font-size --distance 14 --x-height .53 --resolution 163
 
-    For your typeface, the minimum legible font size is 11px
+    For your typeface, the minimum legible font size is 14px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 12px;
+    Your text is nicely readable starting from… 17px;
 
-    however, anything beyond 14px will damage readability.
+    however, anything beyond 20px will damage readability.
 ```
 
 ## I Need Help
