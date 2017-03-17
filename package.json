@@ -1,6 +1,6 @@
 {
   "name": "font-size",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "font-size is a command-line utility to calculate the best font-size based on a multitude of factors.",
   "main": "index.js",
   "preferGlobal": true,
