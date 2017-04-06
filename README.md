@@ -52,6 +52,27 @@ To me, it gave fairly accurate results. Though, [please file an issue](https://g
 
 Also, [please shoot me an email](mailto:me@volkan.io) if you find an article or study that covers the effect of typeface and font x-height ratio regarding readability and eye fatigue.
 
+## Can You Be More Specific Please?
+
+The “*x-height critical size*” of a text that you are reading, in other words, the minimum size that the text is still legible is about **4.5 points at 16’’**, or **about 0.2° of visual arc**, for readers with **20/20 vision**. 
+
+For older readers, this increases to **0.3°** (*~6 point*); for those with much older and less flexible eyes, it rises to as much as **1.0°** (*~20 pts*).
+
+The lesson to learn here is that, the exact font size and shape that feels comfortable depends on many factors including, age, eyesight, and personal preference (*there even are people who **love** to code with “Comic Sans MS”, for example*)
+
+I’ve created this app to suit for a normalized used case.
+
+Also note that:
+
+* Each font will have a different **x-height**.
+* **x-height** is not the only thing that increases the font’s readability. A narrow font with a high x-height can be less readable than a wider font with relatively lower x-height.
+* Certain people (*people with astigmatism, dyslexia…) feel more comfortable with certain kinds of fonts regardless of the font’s x-height ratio.
+* The angle you look at the screen also affects your visual arc. The code simplifies the computation by assuming that you are directly looking at the screen; which is the case most of the time anyway.
+
+Additionally, the article that I cited talks about **print size**. — **72 points** on paper is **1 inches**; that’s a fact, and it does not change. 
+
+One other thing is: Although almost all operating systems assume that your monitor has a 96 pixels-per-inch resolution, your display may have higher or lower pixels per physical ruler inch. — Which means 96 computer pixels, which is 1 computer inches, may not be 1 physical-world ruler inch. — To make the math simpler, the algorithm in this app calculates font sizes in pixels instead of points. — If you need a point font-size instead; it should be relatively easy to convert.
+
 ## Can I configure it for my taste?
 
 `font-size` assumes perfect vision, or perfectly adjusted vision (*i.e. corrective lenses*).
