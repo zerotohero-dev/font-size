@@ -52,7 +52,7 @@ To me, it gave fairly accurate results. Though, [please file an issue](https://g
 
 Also, [please shoot me an email](mailto:me@volkan.io) if you find an article or study that covers the effect of typeface and font x-height ratio regarding readability and eye fatigue.
 
-## Can You Be More Specific Please?
+## Can You Be More Specific, Please?
 
 The “*x-height critical size*” of a text that you are reading, in other words, the minimum size that the text is still legible is about **4.5 points at 16’’**, or **about 0.2° of visual arc**, for readers with **20/20 vision**. 
 
