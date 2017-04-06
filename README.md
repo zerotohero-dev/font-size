@@ -121,13 +121,9 @@ font-size --help
 
 ## Dependencies
 
-You will need a recent version of Node.JS.
+You will need the **current** version of [Node.JS](https://nodejs.org/) with all the bells and whistles — [You can install it from nodejs.org](https://nodejs.org/).
 
-For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
-
-**[Node.JS](https://nodejs.org) version 7.7.1 or above** is recommended; though probably any **7.x** version would work too.
-
-`font-size` is self-sufficient; you just need a good-enough JavaScript runtime; all of its dependencies will be fetched during install time. — You can look at `package.json` to glance over the dependencies.
+`font-size` is self-sufficient; all of its dependencies will be fetched during install time. — You can look at `package.json` to glance over the dependencies.
 
 ## Package Scripts
 
