@@ -1,3 +1,11 @@
+[![tests][tests]][tests-url]
+[![deps][deps]][deps-url]
+
+[tests]: https://img.shields.io/travis/jsbites/font-size.svg
+[tests-url]: https://travis-ci.org/jsbites/font-size
+[deps]: https://david-dm.org/jsbites/font-size.svg
+[deps-url]: https://david-dm.org/jsbites/font-size
+
 ```
   ___________________
  |"|"|"|"|"|"|"|"|"|"|
