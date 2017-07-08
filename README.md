@@ -1,3 +1,11 @@
+[![tests][tests]][tests-url]
+[![deps][deps]][deps-url]
+
+[tests]: https://img.shields.io/travis/jsbites/font-size.svg
+[tests-url]: https://travis-ci.org/jsbites/font-size
+[deps]: https://david-dm.org/jsbites/font-size.svg
+[deps-url]: https://david-dm.org/jsbites/font-size
+
 ```
   ___________________
  |"|"|"|"|"|"|"|"|"|"|
@@ -52,6 +60,27 @@ To me, it gave fairly accurate results. Though, [please file an issue](https://g
 
 Also, [please shoot me an email](mailto:me@volkan.io) if you find an article or study that covers the effect of typeface and font x-height ratio regarding readability and eye fatigue.
 
+## Can You Be More Specific, Please?
+
+The “*x-height critical size*” of a text that you are reading, in other words, the minimum size that the text is still legible is about **4.5 points at 16’’**, or **about 0.2° of visual arc**, for readers with **20/20 vision**. 
+
+For older readers, this increases to **0.3°** (*~6 point*); for those with much older and less flexible eyes, it rises to as much as **1.0°** (*~20 pts*).
+
+The lesson to learn here is that, the exact font size and shape that feels comfortable depends on many factors including, age, eyesight, and personal preference (*there even are people who **love** to code with “Comic Sans MS”, for example*)
+
+I’ve created this app to suit for a normalized used case.
+
+Also note that:
+
+* Each font will have a different **x-height**.
+* **x-height** is not the only thing that increases the font’s readability. A narrow font with a high x-height can be less readable than a wider font with relatively lower x-height.
+* Certain people (*people with astigmatism, dyslexia…) feel more comfortable with certain kinds of fonts regardless of the font’s x-height ratio.
+* The angle you look at the screen also affects your visual arc. The code simplifies the computation by assuming that you are directly looking at the screen; which is the case most of the time anyway.
+
+Additionally, the article that I cited talks about **print size**. — **72 points** on paper is **1 inches**; that’s a fact, and it does not change. 
+
+One other thing is: Although almost all operating systems assume that your monitor has a 96 pixels-per-inch resolution, your display may have higher or lower pixels per physical ruler inch. — Which means 96 computer pixels, which is 1 computer inches, may not be 1 physical-world ruler inch. — To make the math simpler, the algorithm in this app calculates font sizes in pixels instead of points. — If you need a point font-size instead; it should be relatively easy to convert.
+
 ## Can I configure it for my taste?
 
 `font-size` assumes perfect vision, or perfectly adjusted vision (*i.e. corrective lenses*).
@@ -77,12 +106,12 @@ The `font-size` API is simple; you provide your distance to the screen (*in inch
 ```bash
 font-size --distance 28 --x-height .53 --resolution 110
 
-    For your typeface, the minimum legible font size is 14px
+    For your typeface, the minimum legible font size is 19px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 16px;
+    Your text is nicely readable starting from… 22px;
 
-    however, anything beyond 19px will damage readability.
+    however, anything beyond 27px will damage readability.
 ```
 
 If you are a laptop user, on average, your eyes will be 23’’ from the monitor. Let’s change the distance to see what `font-size` recommends:
@@ -90,12 +119,12 @@ If you are a laptop user, on average, your eyes will be 23’’ from the monito
 ```bash
 font-size --distance 23 --x-height .53 --resolution 110
 
-    For your typeface, the minimum legible font size is 12px
+    For your typeface, the minimum legible font size is 16px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 13px;
+    Your text is nicely readable starting from… 18px;
 
-    however, anything beyond 16px will damage readability.
+    however, anything beyond 22px will damage readability.
 ```
 
 Fair enough. And you generally hold your tablet around 14’’ from your eyes. Let’s recalculate with adjusted distance, using an Apple iPad Mini at 163 dpi:
@@ -103,12 +132,12 @@ Fair enough. And you generally hold your tablet around 14’’ from your eyes. 
 ```bash
 font-size --distance 14 --x-height .53 --resolution 163
 
-    For your typeface, the minimum legible font size is 11px
+    For your typeface, the minimum legible font size is 14px
         (you don’t want to hurt your eyes, do you?).
 
-    Your text is nicely readable starting from… 12px;
+    Your text is nicely readable starting from… 17px;
 
-    however, anything beyond 14px will damage readability.
+    however, anything beyond 20px will damage readability.
 ```
 
 ## I Need Help
@@ -121,13 +150,9 @@ font-size --help
 
 ## Dependencies
 
-You will need a recent version of Node.JS.
+You will need the **current** version of [Node.JS](https://nodejs.org/) with all the bells and whistles — [You can install it from nodejs.org](https://nodejs.org/).
 
-For development, you’ll need a recent version of [Node.JS](https://nodejs.org) and [NPM](https://npmjs.org).
-
-**[Node.JS](https://nodejs.org) version 7.7.1 or above** is recommended; though probably any **7.x** version would work too.
-
-`font-size` is self-sufficient; you just need a good-enough JavaScript runtime; all of its dependencies will be fetched during install time. — You can look at `package.json` to glance over the dependencies.
+`font-size` is self-sufficient; all of its dependencies will be fetched during install time. — You can look at `package.json` to glance over the dependencies.
 
 ## Package Scripts
 

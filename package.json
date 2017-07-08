@@ -16,27 +16,40 @@
     "url": "git+https://github.com/jsbites/font-size.git"
   },
   "keywords": [
-    "readability",
-    "font-size",
-    "x-height",
+    "byte-sized javascript",
+    "byte-sized",
+    "bytesized.tv",
     "cli",
+    "demos",
     "distance",
+    "education",
+    "font-size",
+    "javascript",
+    "learning",
+    "podcast",
+    "readability",
     "resolution",
-    "retina"
+    "retina",
+    "screencast",
+    "tutorials",
+    "vidcast",
+    "videocast",
+    "videos",
+    "x-height"
   ],
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsbites/font-size/issues"
   },
-  "homepage": "https://github.com/jsbites/font-size#readme",
+  "homepage": "https://bytesized.tv/",
   "dependencies": {
-    "chalk": "^1.1.3",
-    "commander": "^2.9.0"
+    "chalk": "^2.0.1",
+    "commander": "^2.11.0"
   },
   "devDependencies": {
-    "eslint": "^3.17.1",
-    "eslint-config-jsbites": "^0.4.1",
-    "http-server": "^0.9.0"
+    "eslint": "^4.1.1",
+    "eslint-config-jsbites": "^0.8.0",
+    "http-server": "^0.10.0"
   }
 }
