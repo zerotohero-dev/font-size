@@ -1,10 +1,18 @@
 [![tests][tests]][tests-url]
 [![deps][deps]][deps-url]
+[![npm][npm]][npm-url]
+[![license][license]][license-url]
 
 [tests]: https://img.shields.io/travis/jsbites/font-size.svg
 [tests-url]: https://travis-ci.org/jsbites/font-size
 [deps]: https://david-dm.org/jsbites/font-size.svg
 [deps-url]: https://david-dm.org/jsbites/font-size
+[npm-url]: https://www.npmjs.com/packages/font-size
+[npm]: https://img.shields.io/npm/v/font-size.svg
+[deploy]: https://img.shields.io/github/last-commit/jsbites/font-size.svg?label=last%20deployed
+[deploy-url]: https://github.com/jsbites/font-size/
+[license]: https://img.shields.io/npm/l/font-size.svg
+[license-url]: https://www.npmjs.com/package/font-size
 
 ```
   ___________________
