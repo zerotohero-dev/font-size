@@ -50,7 +50,7 @@ Also, [please shoot me an email](mailto:me@volkan.io) if you find an article or 
 
 The “*x-height critical size*” of a text that you are reading, in other words, the minimum size that the text is still legible is about **4.5 points at 16’’**, or **about 0.2° of visual arc**, for readers with **20/20 vision**. 
 
-For older readers, this increases to **0.3°** (*~16 pts*); for those with much older and less flexible eyes, it rises to as much as **1.0°** (*~20 pts*).
+For older readers, this increases to **0.3°** (*~6 pts*); for those with much older and less flexible eyes, it rises to as much as **1.0°** (*~20 pts*).
 
 The lesson to learn here is that, the exact font size and shape that feels comfortable depends on many factors including, age, eyesight, and personal preference (*there even are people who **love** to code with “Comic Sans MS”, for example*)
 
